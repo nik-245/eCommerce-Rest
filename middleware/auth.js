@@ -20,7 +20,7 @@ const auth = async (req, res, next) => {
     req.user = user;
 
     next();
-  } catch (err) {
+  } catch (err) {5
     return next(CustomErrorHandler.unAuthorized());
   }
 };

@@ -15,10 +15,11 @@ db.once('open', ()=>{
     console.log('Database connected! :)');
 })
 // json enneble
-app.use(express.json());
+app.use(express.json()); 
  
 // router register in oue=r application
-app.use('/api',routes);
+app.use('/api', routes);
+ 
 
 // middelware 
 app.use(errorHandler);
